@@ -71,7 +71,15 @@ h2 {
         border: 1px solid var(--ticket_input_text);
         border-radius: 0.2rem;
         padding: 0.5rem;
+
+        &:focus {
+            outline: 2px solid var(--ticket_input_text);
+        }
     }
+
+    /* & input:focus {
+        outline: 3px dashed deepskyblue;
+    } */
 
     & button {
         margin: 1rem 0.5rem;
@@ -84,6 +92,10 @@ h2 {
 
         &:first-of-type {
             border-color: var(--ticket_input_text);
+        }
+
+        &:hover {
+            outline: 2px solid;
         }
     }
 }
