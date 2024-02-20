@@ -11,23 +11,23 @@
 <body>
 
     <main>
-        <form action="#">
-            <label for="user_name">Nome Cognome</label>
-            <input type="text" id="user_name" name="user_name" value="Mario Rossi">
 
-            <label for="travel_length">Km da percorrere</label>
-            <input type="text" id="travel_length" name="travel_length" value="10">
+        <label for="user_name">Nome Cognome</label>
+        <input type="text" id="user_name" name="user_name">
+        <br>
+        <label for="travel_length">Km da percorrere</label>
+        <input type="text" id="travel_length" name="travel_length">
+        <br>
+        <select name="user_age" id="user_age">
+            <option value="junior">Minorenne</option>
+            <option value="standard">Maggiorenne</option>
+            <option value="senior">Over 65</option>
+        </select>
+        <br>
+        <button>Genera</button>
 
-            <select name="user_age" id="user_age">
-                <option value="junior">Minorenne</option>
-                <option value="standard">Maggiorenne</option>
-                <option value="senior">Over 65</option>
-            </select>
+        <button type="reset">Annulla</button>
 
-            <button type="submit">Genera</button>
-
-            <button type="reset">Annulla</button>
-        </form>
     </main>
 
 

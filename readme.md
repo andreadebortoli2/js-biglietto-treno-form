@@ -38,7 +38,7 @@ Solo una volta che il milestone 1 sarà completo e funzionante allora realizzere
     -show variable in console at the click
     -calculate travel price
         -and show on console.log()
-    -apply discounts
+    -apply discounts setting a final price variable
         -set discount variables:
             -junior -20%
             -senior -40%
