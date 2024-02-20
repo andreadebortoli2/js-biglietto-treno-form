@@ -21,10 +21,11 @@ Solo una volta che il milestone 1 sarà completo e funzionante allora realizzere
 -add html input structure
     -add form
         -add:
-            -2 text input:
+            -1 text input:
                 -user name
+            -1 number input:
                 -travel length
-            -1 select
+            -1 select:
                 -user age
             -2 buttons:
                 -1 submit

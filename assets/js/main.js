@@ -28,11 +28,11 @@ submitBtn.addEventListener(`click`, function() {
 
 //     -calculate travel price
 
-// const travelLengthValue = travelLength.value
+// const travelLengthValue = travelLength.value;
 
-// const kmPrice = 0.21
+// const kmPrice = 0.21;
 
-// const rawPrice = kmPrice * travelLengthValue
+// const rawPrice = kmPrice * travelLengthValue;
 
 
 //     -and show on console.log()
@@ -41,17 +41,15 @@ submitBtn.addEventListener(`click`, function() {
 
 
 //     -apply discounts setting a final price variable
-            // -set discount variables:
-            //     -junior -20%
-// const discountJunior = rawPrice * 0.2;
-            //     -senior -40%
-// const discountSenior = rawPrice * 0.4;
-            //     -standard none
+//          -set discount variables:
+//              -junior -20%
+//              -senior -40%
+//              -standard none
 
 // const discountJunior = rawPrice * 0.2;
 
 // const discountSenior = rawPrice * 0.4;
-            
+
 // let finalPrice
 
 // if (userAge.value == `junior`) {
@@ -60,7 +58,7 @@ submitBtn.addEventListener(`click`, function() {
 //     finalPrice = rawPrice - discountSenior
 // } else {
 //     finalPrice = rawPrice
-// }
+// };
 
 
 //     -show results on console.log()
@@ -71,11 +69,11 @@ submitBtn.addEventListener(`click`, function() {
 
 submitBtn.addEventListener(`click`, function(){
 
-const travelLengthValue = travelLength.value
+const travelLengthValue = travelLength.value;
 
-const kmPrice = 0.21
+const kmPrice = 0.21;
 
-const rawPrice = kmPrice * travelLengthValue
+const rawPrice = kmPrice * travelLengthValue;
 
 const discountJunior = rawPrice * 0.2;
 
@@ -92,7 +90,7 @@ if (userAge.value == `junior`) {
 }
 
     console.log(finalPrice.toFixed(2));
-})
+});
 
 
 // --MILKESTONE 1--
