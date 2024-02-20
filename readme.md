@@ -35,7 +35,9 @@ Solo una volta che il milestone 1 sarà completo e funzionante allora realizzere
         -user name
         -travel length
         -user age
+    -show variable in console at the click
     -calculate travel price
+        -and show on console.log()
     -apply discounts
     -show results on console.log()
 
