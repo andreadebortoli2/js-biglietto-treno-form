@@ -35,7 +35,17 @@ submitBtn.addEventListener(`click`, function() {
 });
 
 //     -apply discounts
+            // -set discount variables:
+            //     -junior -20%
+const discountJunior = rawPrice * 0.2;
+            //     -senior -40%
+const discountSenior = rawPrice * 0.4;
+            //     -standard none
 
-
+if (userAge == `junior`) {
+    console.log(rawPrice - discountJunior)
+} else if (userAge == `senior`) {
+    console.log(rawPrice - discountSenior)
+};
 
 //     -show results on console.log()

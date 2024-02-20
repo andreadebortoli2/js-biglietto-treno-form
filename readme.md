@@ -39,6 +39,10 @@ Solo una volta che il milestone 1 sarà completo e funzionante allora realizzere
     -calculate travel price
         -and show on console.log()
     -apply discounts
+        -set discount variables:
+            -junior -20%
+            -senior -40%
+            -standard none
     -show results on console.log()
 
 --Milestone 1--
