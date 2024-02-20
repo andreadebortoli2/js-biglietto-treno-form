@@ -4,3 +4,9 @@
     box-sizing: border-box;
     /* border: 1px dashed deepskyblue; */
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
