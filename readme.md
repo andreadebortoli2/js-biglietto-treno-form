@@ -57,7 +57,9 @@ Solo una volta che il milestone 1 sarà completo e funzionante allora realizzere
         -price
 
 -edit js to show results in the page
-         
+    -set al values and variables that has to be shown
+    -show results on page
+
 -add css
 
 --Milestone 2--
