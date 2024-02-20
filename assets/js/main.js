@@ -147,7 +147,7 @@ submitBtn.addEventListener(`click`, function(){
         finalPrice = rawPrice
     }
     
-    // console.log(finalPrice.toFixed(2));
+    console.log(finalPrice.toFixed(2));
         
     const travelerName = document.querySelector(`.traveler_name`);
     const ticketType = document.querySelector(`.ticket_type`);

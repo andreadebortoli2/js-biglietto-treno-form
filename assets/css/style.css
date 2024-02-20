@@ -4,3 +4,97 @@
     box-sizing: border-box;
     /* border: 1px dashed deepskyblue; */
 }
+
+:root {
+    --ticket_main_bg: rgba(185, 20, 80, 1);
+    --ticket_input_text: rgba(185, 17, 78, 1);
+    --ticket_btn_bg: rgba(204, 204, 204, 1);
+    --ticket_name_bg: rgba(128, 128, 128, 1);
+    --ticket_lightest: rgba(255, 255, 255, 1);
+    --ticket_darkest: rgba(0, 0, 0, 1);
+}
+
+
+/* Utilities */
+.col_4 {
+    width: calc((100% / 12) * 4);
+}
+
+.col_12 {
+    width: 100%;
+}
+
+
+/* Common */
+main {
+    height: 100vh;
+    background-color: var(--ticket_main_bg);
+    font-family: "Roboto" , sans-serif;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+h2 {
+    color: var(--ticket_lightest);
+    text-align: center;
+    margin: 1rem;
+}
+
+.card {
+    background-color: var(--ticket_lightest);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* #region input */
+.input {
+    
+
+    .card {
+        border-radius: 1rem;
+        box-shadow: 0 0 5px 5px rgba(0,0,0,0.3);
+    }
+
+    & label {
+        color: var(--ticket_input_text);
+        margin: 1rem;
+        display: block;
+    }
+
+    & input, select {
+        border: 1px solid var(--ticket_input_text);
+        border-radius: 0.2rem;
+    }
+
+    & button {
+        margin: 1rem 0.5rem;
+        padding: 0.3rem;
+        font-size: 1.2rem;
+        border-radius: 0.5rem;
+        color: var(--ticket_input_text);
+        background-color: var(--ticket_btn_bg);
+        border: 1px solid var(--ticket_name_bg);
+
+        &:first-of-type {
+            border-color: var(--ticket_input_text);
+        }
+    }
+}
+
+
+/* #endregion input */
+
+/* #region ticket */
+.ticket {
+    
+}
+
+
+/* #endregion ticket */
