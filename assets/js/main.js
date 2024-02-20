@@ -170,4 +170,6 @@ submitBtn.addEventListener(`click`, function(){
     trainNumber.innerHTML += Math.floor(Math.random() * 99999) +1;
         
     price.innerHTML += finalPrice.toFixed(2) + `€`   
+
+    document.querySelector(`.ticket`).style.display = `block`;
     });

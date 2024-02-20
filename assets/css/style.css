@@ -93,6 +93,7 @@ h2 {
 
 /* #region ticket */
 .ticket {
+    display: none;
 
     .card {
         padding: 1rem;
