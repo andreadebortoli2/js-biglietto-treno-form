@@ -1,26 +1,26 @@
-// console.log(`Hi`);
+// console.log('Hi');
 
 // -ask and set as variables:
 
 //         -user name
-const userName = document.getElementById(`user_name`);
+const userName = document.getElementById('user_name');
 // console.log(userName.value);
 
 //         -travel length
-const travelLength = document.getElementById(`travel_length`);
+const travelLength = document.getElementById('travel_length');
 // console.log(travelLength.value);
 
 //         -user age
-const userAge = document.getElementById(`user_age`);
+const userAge = document.getElementById('user_age');
 // console.log(userAge.value);
 
 
 
 //-show variable in console at the click
 
-const submitBtn = document.querySelector(`button`);
+const submitBtn = document.querySelector('button');
 
-submitBtn.addEventListener(`click`, function() {
+submitBtn.addEventListener('click', function () {
     console.log(userName.value, travelLength.value, userAge.value);
 });
 
@@ -30,7 +30,7 @@ submitBtn.addEventListener(`click`, function() {
 
 // const travelLengthValue = travelLength.value;
 
-// const kmPrice = 0.21;
+const kmPrice = 0.21;
 
 // const rawPrice = kmPrice * travelLengthValue;
 
@@ -52,9 +52,9 @@ submitBtn.addEventListener(`click`, function() {
 
 // let finalPrice
 
-// if (userAge.value == `junior`) {
+// if (userAge.value == 'junior') {
 //     finalPrice = rawPrice - discountJunior
-// } else if (userAge.value == `senior`) {
+// } else if (userAge.value == 'senior') {
 //     finalPrice = rawPrice - discountSenior
 // } else {
 //     finalPrice = rawPrice
@@ -67,7 +67,7 @@ submitBtn.addEventListener(`click`, function() {
 
 
 /*
-submitBtn.addEventListener(`click`, function(){
+submitBtn.addEventListener('click', function(){
 
 const travelLengthValue = travelLength.value;
 
@@ -81,9 +81,9 @@ const discountSenior = rawPrice * 0.4;
 
 let finalPrice
 
-if (userAge.value == `junior`) {
+if (userAge.value == 'junior') {
     finalPrice = rawPrice - discountJunior
-} else if (userAge.value == `senior`) {
+} else if (userAge.value == 'senior') {
     finalPrice = rawPrice - discountSenior
 } else {
     finalPrice = rawPrice
@@ -100,80 +100,74 @@ if (userAge.value == `junior`) {
 
 //     -set al values and variables that has to be shown
 
-// const travelerName = document.querySelector(`.traveler_name`);
-// const ticketType = document.querySelector(`.ticket_type`);
-// const carriage = document.querySelector(`.carriage`);
-// const trainNumber = document.querySelector(`.train_number`);
-// const price = document.querySelector(`.price`);
-        
+const passengerName = document.getElementById('passenger_name');
+const ticketType = document.getElementById('ticket_type');
+const wagon = document.getElementById('wagon');
+const trainNumber = document.getElementById('train_number');
+const price = document.getElementById('price');
+
 // travelerName.innerHTML += userName.value;
-        
-// if (userAge.value == `junior`) {
-//     ticketType.innerHTML += `Sconto Junior`
-// } else if (userAge.value == `senior`) {
-//     ticketType.innerHTML += `Sconto Seniores`
+
+// if (userAge.value == 'junior') {
+//     ticketType.innerHTML += 'Sconto Junior'
+// } else if (userAge.value == 'senior') {
+//     ticketType.innerHTML += 'Sconto Seniores'
 // } else {
-//     ticketType.innerHTML += `Biglietto Standard`
+//     ticketType.innerHTML += 'Biglietto Standard'
 // };
-        
+
 // carriage.innerHTML += Math.floor(Math.random() * 20) +1;
-        
+
 // trainNumber.innerHTML += Math.floor(Math.random() * 99999) +1;
-        
-// price.innerHTML += finalPrice.toFixed(2) + `€`;
+
+// price.innerHTML += finalPrice.toFixed(2) + '€';
 
 
 //      -show results on the page
 
-const form = document.querySelector(`form`)
+const form = document.querySelector('form')
 
-form.addEventListener(`submit`, function(e){
+form.addEventListener('submit', function (e) {
 
     e.preventDefault()
 
-    const travelLengthValue = travelLength.value;
-    
-    const kmPrice = 0.21;
-    
-    const rawPrice = kmPrice * travelLengthValue;
-    
+    let travelLengthValue = travelLength.value;
+
+    let rawPrice = kmPrice * travelLengthValue;
+
     const discountJunior = rawPrice * 0.2;
-    
+
     const discountSenior = rawPrice * 0.4;
-    
+
     let finalPrice
-    
-    if (userAge.value == `junior`) {
+
+    if (userAge.value == 'junior') {
         finalPrice = rawPrice - discountJunior
-    } else if (userAge.value == `senior`) {
+    } else if (userAge.value == 'senior') {
         finalPrice = rawPrice - discountSenior
     } else {
         finalPrice = rawPrice
     }
-    
-    console.log(finalPrice.toFixed(2));
-        
-    const travelerName = document.querySelector(`.traveler_name`);
-    const ticketType = document.querySelector(`.ticket_type`);
-    const carriage = document.querySelector(`.carriage`);
-    const trainNumber = document.querySelector(`.train_number`);
-    const price = document.querySelector(`.price`);
-        
-    travelerName.innerHTML += userName.value;
-        
-    if (userAge.value == `junior`) {
-        ticketType.innerHTML += `Sconto Junior`
-    } else if (userAge.value == `senior`) {
-        ticketType.innerHTML += `Sconto Seniores`
-    } else {
-        ticketType.innerHTML += `Biglietto Standard`
-    }
-        
-    carriage.innerHTML += Math.floor(Math.random() * 20) +1;
-        
-    trainNumber.innerHTML += Math.floor(Math.random() * 99999) +1;
-        
-    price.innerHTML += finalPrice.toFixed(2) + `€`   
 
-    document.querySelector(`.ticket`).style.display = `block`;
-    });
+    console.log(finalPrice.toFixed(2));
+
+
+    passengerName.innerHTML = userName.value;
+
+    if (userAge.value == 'junior') {
+        ticketType.innerHTML = 'Sconto Junior'
+    } else if (userAge.value == 'senior') {
+        ticketType.innerHTML = 'Sconto Seniores'
+    } else {
+        ticketType.innerHTML = 'Biglietto Standard'
+    }
+
+    wagon.innerHTML = Math.floor(Math.random() * 20) + 1;
+
+    trainNumber.innerHTML = Math.floor(Math.random() * 99999) + 1;
+
+    price.innerHTML = finalPrice.toFixed(2) + '€'
+    // price.insertAdjacentHTML('beforeend' , `${finalPrice.toFixed(2)} €`)
+
+    document.querySelector('.ticket').style.display = 'block';
+});
