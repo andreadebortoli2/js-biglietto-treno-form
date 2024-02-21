@@ -125,7 +125,11 @@ if (userAge.value == `junior`) {
 
 //      -show results on the page
 
-submitBtn.addEventListener(`click`, function(){
+const form = document.querySelector(`form`)
+
+form.addEventListener(`submit`, function(e){
+
+    e.preventDefault()
 
     const travelLengthValue = travelLength.value;
     
